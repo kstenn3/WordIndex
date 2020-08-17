@@ -8,7 +8,10 @@ def main():
 
     user_input = RT()
     user_input.text = input('> ')
-    print(user_input.text)
+
+    word_index = IU()
+    word_index.word_dict = user_input.text
+
 
 
 

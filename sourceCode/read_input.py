@@ -1,13 +1,13 @@
 class ReadText:
 
     def __init__(self):
-        self.__text = ''
+        self.__text = str()
 
     @property
     def text(self):
         return self.__text
 
-    # Todo, set error checking in here
+    # TODO set error checking in here
     @text.setter
     def text(self, input):
         if input == '':
