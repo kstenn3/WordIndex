@@ -1,15 +1,19 @@
-# TODO: add programmer info and program details
-from word_list import WordList
+#! /usr/bin/python3
+import sys
+sys.path.append("../sourceCode/")
+from read_input import ReadText as RT
+from index_utility import IndexUtility as IU
+
 def main():
 
-    print("""
-        < WELCOME TO WORD INDEX UTILITY >
+    user_input = RT()
+    user_input.text = input('> ')
+    print(user_input.text)
 
-        insert a file name or input text
-        """)
-    text = input('> ')
 
-    word_index = WordList(text)
+
+
+
 
 
 

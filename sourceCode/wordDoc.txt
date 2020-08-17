@@ -1,4 +1,0 @@
-hello I am using this file
-to test how open and read
-work for the word INDEX
-program, thank you!

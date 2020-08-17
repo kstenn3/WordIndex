@@ -37,8 +37,8 @@ def main():
     word_list = get_text(user_input)
     word_index = get_loc(word_list)
     print_list(word_index)
-    
-# TODO: practice on the fundamentals in this script
+
+# TODO: practice on the fundamentals in this script (lamdas and inline functions)
 # TODO: Refactor the code
 # TODO: error handling, try and catch
 
