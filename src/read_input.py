@@ -1,5 +1,6 @@
 # ReadText: Reads in text from stdin. If user inputs a text file, the class will
 # open the file and turned the text into a list.
+# TODO: change to module
 class ReadText:
 
     def __init__(self):
