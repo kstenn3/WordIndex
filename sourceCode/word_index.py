@@ -27,7 +27,6 @@ class WordIndex:
         self.word_list = word_list
         word_dict = {}
 
-        # alpha : num
         for n in range(len(self.word_list)):
             word_dict[n] = self.word_list[n]
 

@@ -16,7 +16,7 @@ class IndexUtility:
     def word_dict(self, str):
         self.str = str
         self.__word_dict = self.__build_dict(self.str)
-    
+
 
     def __build_dict(self, str):
         self.str = str
