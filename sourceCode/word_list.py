@@ -43,5 +43,7 @@ class WordList(List):
         temp = re.sub('[^a-z ]+', '', self.str)
         word_list = self.build_list(temp)
         word_list.sort()
-        print(word_list)
+
+        for n in word_list:
+            print(n)
         return word_list
