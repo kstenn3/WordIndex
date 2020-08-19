@@ -11,6 +11,11 @@ def main():
 
     word_index = IU()
     word_index.word_dict = user_input.text
+    print(word_index.word_dict)
+
+
+### TODO: trying to figure out this stupid pring statuement
+# write print function#####################
 
 
 

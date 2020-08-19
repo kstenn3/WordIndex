@@ -36,14 +36,11 @@ class WordList(List):
     def word_list(self, str):
         self.str = str
         self.__word_list = self.__build_word_list(self.str)
-0
+
     def __build_word_list(self, str):
         self.str = str.lower()
         # regex expression that removes all characters that are not lower case alpa
-        temp = re.sub('[^a-z ]+', '', self.str
+        temp = re.sub('[^a-z ]+', '', self.str)
         word_list = self.build_list(temp)
         word_list.sort()
-
-        for n in word_list:
-            print(n)
         return word_list
