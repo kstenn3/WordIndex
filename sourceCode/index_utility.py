@@ -2,7 +2,6 @@ import sys
 sys.path.append("../sourceCode")
 from word_list import WordList as WL
 
-
 class IndexUtility:
 
     def __init__(self):
@@ -17,7 +16,6 @@ class IndexUtility:
         self.str = str
         self.__word_dict = self.__build_dic(self.str)
 
-
     def __build_index(self, word_list):
         pass
 
@@ -28,9 +26,7 @@ class IndexUtility:
         self.str = str
         word_list = WL()
         word_list.word_list = self.str
-        print(word_list.word_list)
-
+        # TODO: working on word_index right now
         word_index = self.__build_index(word_list)
         count_index = self.__index_count(word_index)
-
         return count_index
