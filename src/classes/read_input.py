@@ -12,8 +12,6 @@ class ReadText:
     # TODO set error checking in here
     @text.setter
     def text(self, input):
-        if input == '':
-            raise ValueError("Invalid Entry")
         self.input = input
         self.__text = self.__build_str(self.input)
 

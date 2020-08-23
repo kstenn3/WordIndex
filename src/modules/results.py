@@ -1,15 +1,24 @@
 import os
 
-def make_file(word_dict, user_input):
+def create_file(word_dict, user_input):
     file_name = 'user_input_results.txt'
 
+
+
     if os.path.exists(file_name):
-        x = input('remove file? {} '.format(file_name))
-        if x.lower() == 'yes' or x.lower() == 'y':
-            os.remove(file_name)
-        else:
-            print('good bye')
-            exit()
+        while True:
+            x = input('remove file: {}? '.format(file_name))
+            try:
+                assert x.lower() == 'yes' or x.lower() == 'y'
+                os.remove(file_name)
+                break
+            except AssertionError:
+                try:
+                    assert x.lower() == 'no' or x.lower() == 'n'
+                    file_name = input('enter file name: ') + '.txt'
+                    break
+                except AssertionError:
+                    print('Enter yes(y) or no(n): ')
 
     f = open(file_name, 'a')
     count = 1

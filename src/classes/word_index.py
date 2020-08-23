@@ -22,7 +22,7 @@ class WordIndex:
             index_dict[key] = (len(value), value)
 
         return(index_dict)
-
+        
     def __build_index(self, word_list):
         self.word_list = word_list
         word_dict = {}
